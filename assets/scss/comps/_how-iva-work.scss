@@ -1,0 +1,36 @@
+.how-iva-work {
+    position: relative;
+    padding: 100px 0 200px;
+    background-color: $warning;
+    .how-work-box {
+        border: 2px solid #fff;
+        border-radius: 10px;
+        background-color: rgba($white, 0.2);
+        height: 100%;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+            height: auto;
+        }
+    }
+    .backgrounds {
+        .circle {
+            border-color: #ffdc6e;
+            left: -100px;
+            bottom: -100px;
+            border-width: 3.5vw;
+            &--2 {
+                right: -150px;
+                left: auto;
+                bottom: 100px;
+                top: auto;
+            }
+        }
+
+        .ball {
+            right: 30%;
+            left: auto;
+            bottom: 10%;
+        }
+    }
+}

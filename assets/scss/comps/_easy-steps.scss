@@ -1,0 +1,49 @@
+.easy-steps {
+    padding: 100px 0;
+    .easy-step {
+        width: 210px;
+        height: 210px;
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0px 20.5307px 41.0615px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        img {
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .backgrounds {
+        .ball {
+            right: 0;
+            bottom: 10%;
+        }
+        .line {
+            width: 23px;
+            height: 300px;
+            left: 10%;
+            top: 10%;
+
+            background: linear-gradient(261.98deg, rgba(255, 220, 110, 0.1) -281.56%, rgba(230, 115, 232, 0.1) 588.97%, rgba(5, 220, 91, 0.1) 638.22%);
+            border-radius: 11.25px;
+
+            &--2 {
+                width: 30px;
+                height: 400px;
+                left: 8%;
+                top: 20%;
+
+                background: linear-gradient(250.46deg, rgba(255, 220, 110, 0.1) 72.09%, rgba(119, 209, 179, 0.1) 352.57%);
+                border-radius: 15px;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 0;
+        .easy-step {
+            display: block;
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+    }
+}

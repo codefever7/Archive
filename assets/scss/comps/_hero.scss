@@ -1,0 +1,194 @@
+.hero {
+    height: 1024px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .custom-btn {
+        animation-delay: 1.5s;
+        animation-name: shake;
+        animation-duration: 0.5s;
+        animation-iteration-count: 3;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 1.4;
+        letter-spacing: 0.5px;
+    }
+    .backgrounds {
+        z-index: -1;
+        .square {
+            left: 40%;
+            margin-top: -50px;
+        }
+        .circle {
+            right: 0;
+            transform: translateX(50%);
+            top: 20vh;
+            @include media-breakpoint-down(md) {
+                top: 0;
+            }
+            &--2 {
+                left: 0;
+                right: auto;
+                top: auto;
+                bottom: 5vh;
+                transform: translateX(-50%);
+                opacity: 0.4;
+            }
+        }
+        .ball {
+            left: 45%;
+            bottom: 15vh;
+        }
+        .polygon {
+            left: 50%;
+            top: 42%;
+            @include media-breakpoint-down(md) {
+                left: 90%;
+                top: 54%;
+            }
+            &--2 {
+                top: auto;
+                bottom: 0;
+                left: 30%;
+                max-width: 100px;
+                max-height: 100px;
+                opacity: 0.3;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+        }
+        .line {
+            left: 30%;
+            top: 20%;
+            &--2 {
+                width: 6px;
+                height: 181px;
+                background: linear-gradient(259.16deg, rgba(119, 209, 179, 0.1) -331.68%, rgba(5, 220, 91, 0.1) 384.2%);
+                border-radius: 3px;
+                left: 20%;
+                top: 35%;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+            &--3 {
+                width: 23px;
+                height: 300px;
+                left: 0;
+                top: 10%;
+                background: linear-gradient(261.98deg, rgba(255, 220, 110, 0.1) -281.56%, rgba(230, 115, 232, 0.1) 588.97%, rgba(5, 220, 91, 0.1) 638.22%);
+                @include media-breakpoint-down(md) {
+                    top: 200px;
+                    left: auto;
+                    right: 0;
+                }
+            }
+            &--4 {
+                width: 30px;
+                height: 300px;
+                left: 0;
+                top: 30%;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+        }
+        .dots {
+            left: 0;
+            top: 22%;
+            &--2 {
+                left: 64%;
+                top: 32%;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__image {
+        max-width: 450px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    @include media-breakpoint-down(lg) {
+        height: auto;
+        padding: 100px 0;
+        &__image {
+            max-width: 100%;
+        }
+        h1 {
+            font-size: 40px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        padding: 20px 0 70px;
+        &__image {
+            max-width: 160px;
+        }
+        h1 {
+            font-size: 26px;
+        }
+    }
+}
+
+.page-hero {
+    background-color: $warning;
+    padding: 170px 0 60px;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+        padding: 80px 0 60px;
+    }
+    .backgrounds {
+        .dots2 {
+            left: 30%;
+            top: 170px;
+            @include media-breakpoint-down(lg) {
+                left: 10%;
+                top: 0;
+            }
+        }
+        .qube2 {
+            top: 150px;
+            right: 30%;
+            @include media-breakpoint-down(lg) {
+                right: 10%;
+                top: 0;
+            }
+        }
+    }
+}
+.page-hero-banner {
+    background-image: url(../../../public/images/office-banner.png);
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    padding: 50px 0;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-size: 50px;
+        line-height: 1.5;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-top: 0;
+        min-height: initial;
+        padding: 100px 0;
+        h1 {
+            font-size: 30px;
+            line-height: 1.4;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        background-position: center;
+        .custom-btn {
+            min-width: 230px;
+            margin-bottom: 10px;
+            margin-left: 0 !important;
+        }
+    }
+}

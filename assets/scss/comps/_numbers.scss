@@ -1,0 +1,40 @@
+.numbers {
+    padding: 50px 0 50px;
+    &__image {
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+    .numbers-box {
+        background: #ffffff;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .backgrounds {
+        z-index: -1;
+        .box {
+            left: 22%;
+            top: 30%;
+        }
+        .circle {
+            right: 0;
+            transform: translateX(50%);
+            top: 0;
+            opacity: 0.2;
+            &--2 {
+                left: 0;
+                right: auto;
+                top: auto;
+                bottom: 5vh;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        &__image {
+            max-width: 70px;
+        }
+    }
+}

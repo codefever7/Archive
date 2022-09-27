@@ -1,0 +1,31 @@
+.reviews {
+    padding: 50px 0;
+    position: relative;
+    .backgrounds {
+        .ball {
+            right: 0;
+            bottom: 10%;
+        }
+        .line {
+            width: 23px;
+            height: 300px;
+            left: 30%;
+            top: 10%;
+
+            background: linear-gradient(261.98deg, rgba(255, 220, 110, 0.1) -281.56%, rgba(230, 115, 232, 0.1) 588.97%, rgba(5, 220, 91, 0.1) 638.22%);
+            border-radius: 11.25px;
+        }
+        .ring {
+            top: 50%;
+        }
+    }
+}
+.review-card {
+    background: #ffffff;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    img {
+        max-width: 90px;
+    }
+}

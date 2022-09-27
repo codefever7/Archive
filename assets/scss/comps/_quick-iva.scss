@@ -1,0 +1,19 @@
+.quick-iva {
+    padding: 70px 0;
+    position: relative;
+    .backgrounds {
+        .dots {
+            left: 0;
+            top: 30px;
+            background-image: url(../../../public/images/dots-grey.svg);
+        }
+        .polygon {
+            top: 50px;
+            right: 40%;
+            opacity: 0.2;
+            @include media-breakpoint-down(md) {
+                right: 5%;
+            }
+        }
+    }
+}

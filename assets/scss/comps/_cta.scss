@@ -1,0 +1,31 @@
+.cta {
+    padding-bottom: 50px;
+    padding-top: 130px;
+    position: relative;
+    .begin {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    &__image {
+        margin-top: -90px;
+        width: 100%;
+    }
+    .backgrounds {
+        .ball {
+            right: 0;
+            bottom: 10%;
+        }
+        .line {
+            width: 23px;
+            height: 300px;
+            left: 30%;
+            top: 10%;
+
+            background: linear-gradient(261.98deg, rgba(255, 220, 110, 0.1) -281.56%, rgba(230, 115, 232, 0.1) 588.97%, rgba(5, 220, 91, 0.1) 638.22%);
+            border-radius: 11.25px;
+        }
+        .ring {
+            top: 50%;
+        }
+    }
+}

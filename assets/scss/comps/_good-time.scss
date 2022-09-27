@@ -1,0 +1,55 @@
+.good-time {
+    padding: 100px 0 80px;
+    background-color: $warning;
+
+    &__image {
+        max-width: 350px;
+        display: block;
+        margin: 0 auto;
+    }
+    .backgrounds {
+        // z-index: -1;
+        .square {
+            left: 40%;
+            margin-top: -50px;
+        }
+        .circle {
+            right: 0;
+            transform: translateX(50%);
+            top: 20vh;
+            border-color: #ffdc6e;
+            &--2 {
+                left: 0;
+                right: auto;
+                top: auto;
+                bottom: 5vh;
+                transform: translateX(-50%);
+                border-color: #ffdc6e;
+            }
+        }
+        .ball {
+            left: 52%;
+            bottom: 15vh;
+        }
+        .dots {
+            left: 55%;
+            top: 28%;
+            background-image: url(../../../public/images/dots-white.svg);
+        }
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0 50px 0;
+        &__image {
+            max-width: 150px;
+        }
+    }
+}
+.gethelp {
+    padding: 50px 0 50px;
+    .good-time__image {
+        max-width: 450px;
+        @include media-breakpoint-down(lg) {
+            max-width: 100% !important;
+        }
+    }
+}

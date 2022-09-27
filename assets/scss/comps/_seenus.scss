@@ -1,0 +1,16 @@
+.seen-us {
+    padding: 100px 0 50px 0;
+
+    .backgrounds {
+        .ball {
+            bottom: 20px;
+            left: 10%;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0 50px 0;
+        img {
+            width: 100%;
+        }
+    }
+}

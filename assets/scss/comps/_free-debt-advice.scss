@@ -1,0 +1,48 @@
+.free-debt-advice {
+    position: relative;
+    padding: 100px 0;
+    background-color: $warning;
+    &__image {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+        @include media-breakpoint-down(sm) {
+            max-width: 100px;
+            margin-top: 40px;
+        }
+    }
+    .advice-box {
+        border: 2px solid #fff;
+        border-radius: 15px;
+        background-color: rgba($white, 0.2);
+        .form-control {
+            border: none;
+            height: 50px;
+            font-size: 14px;
+            margin-bottom: 20px !important;
+            margin-top: 5px;
+        }
+    }
+    .backgrounds {
+        .circle {
+            border-color: #ffdc6e;
+            left: -100px;
+            bottom: -100px;
+            border-width: 3.5vw;
+            &--2 {
+                right: -150px;
+                left: auto;
+                top: 100px;
+                bottom: auto;
+            }
+        }
+        .ring {
+            top: 50%;
+        }
+        .ball {
+            right: 50%;
+            left: auto;
+            bottom: 20%;
+        }
+    }
+}

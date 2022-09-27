@@ -1,0 +1,28 @@
+.what-is-iva {
+    position: relative;
+    padding: 100px 0;
+
+    .backgrounds {
+        .circle {
+            border-color: #fdf6e0;
+            left: -100px;
+            top: -100px;
+            border-width: 3.5vw;
+            max-width: 500px;
+            max-height: 500px;
+            &--2 {
+                right: -100px;
+                left: auto;
+                bottom: -100px;
+                top: auto;
+            }
+        }
+
+        .polygon {
+            right: 30%;
+            left: auto;
+            top: 50px;
+            opacity: 0.2;
+        }
+    }
+}

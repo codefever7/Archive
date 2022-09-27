@@ -1,0 +1,49 @@
+.unique {
+    padding: 100px 0 80px;
+    &__image {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        @include media-breakpoint-down(lg) {
+            max-width: 300px;
+        }
+    }
+    .backgrounds {
+        // z-index: -1;
+        .square {
+            left: 40%;
+            margin-top: -50px;
+        }
+        .circle {
+            right: 0;
+            top: 10%;
+            border-color: #ffdc6e;
+            opacity: 0.4;
+            &--2 {
+                left: 0;
+                right: auto;
+                top: auto;
+                bottom: 5vh;
+                border-color: #ffdc6e;
+            }
+        }
+        .ball {
+            left: 52%;
+            bottom: 15vh;
+        }
+        .dots {
+            left: 12%;
+            top: 28%;
+            background-image: url(../../../public/images/dots.svg);
+        }
+    }
+}
+.gethelp {
+    padding: 50px 0 50px;
+    .good-time__image {
+        max-width: 450px;
+        @include media-breakpoint-down(lg) {
+            max-width: 150px !important;
+        }
+    }
+}
