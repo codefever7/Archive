@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <>
             <footer className="wow fadeInUp">
-                <Container className="py-5 text-white font-monospace">
+                {/* <Container className="py-5 text-white font-monospace">
                     <Row>
                         <Col>
                             <p className="mb-4 lead lead--small wow fadeInUp">
@@ -26,11 +26,11 @@ export default function Footer() {
                             <img src="/images/money-advise.svg" alt="" />
                         </Col>
                     </Row>
-                </Container>
-                <hr />
+                </Container> */}
+                {/* <hr /> */}
                 <Container className="py-5 text-white font-monospace">
                     <Row>
-                        <Col lg={3}>
+                        {/* <Col lg={3}>
                             <Nav
                                 as="ul"
                                 className="justify-content-center flex-column text-uppercase"
@@ -63,7 +63,7 @@ export default function Footer() {
                                     </a>
                                 </Link>
                             </Nav>
-                        </Col>
+                        </Col> */}
                         <Col>
                             <p className="lead text-white mb-3 text-start wow fadeInUp">
                                 {" "}
